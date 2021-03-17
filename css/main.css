@@ -60,7 +60,6 @@ main {
 }
 
 .container {
-  max-width: 1200px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
@@ -68,12 +67,42 @@ main {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+  outline: 1px solid tomato;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .header__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .hidden {
@@ -263,12 +292,18 @@ main {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}
+
 .nav__item {
   margin-left: 50px;
 }
 
 .nav__item:first-child {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .nav__link {
@@ -292,6 +327,7 @@ main {
 
 .nav__link--grey {
   color: var(--main-color);
+  padding: 0;
 }
 
 .nav__link--current {
@@ -312,18 +348,31 @@ main {
 }
 
 .contact__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 21px;
+  padding-bottom: 21px;
 }
 
-.contact__item:last-child {
-  margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .contact__links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__links {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact__links .nav__link--grey {
+    padding-top: 10px;
+  }
 }
 
 .contact__item .link:hover,
@@ -1156,5 +1205,12 @@ main {
 
 .btn > .btn__item + .btn__item {
   margin-left: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+    position: absolute;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+// .mobile {
+//   //   display: none;
+
+//   @media screen and(min-width: 768px) {
+//     display: block;
+//   }
+// }
+
+.mobile__menu {
+  //   margin-left: auto;
+  @media screen and(min-width: 768px) {
+    display: none;
+    position: absolute;
+  }
+}
