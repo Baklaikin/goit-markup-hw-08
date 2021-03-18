@@ -794,8 +794,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: calc(100%-2-60px);
-      flex-basis: calc(100%-2-60px);
+  -ms-flex-preferred-size: calc(100% / 2-60px);
+      flex-basis: calc(100% / 2-60px);
   margin-top: 30px;
   margin-left: 30px;
   color: var(--social-media-color);
