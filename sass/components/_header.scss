@@ -5,3 +5,10 @@
   font-weight: 500;
   border-bottom: 1px solid var(--border-color);
 }
+
+.header__menu {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}

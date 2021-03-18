@@ -13,17 +13,23 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  // display: flex;
+  // align-items: baseline;
+  // justify-content: space-between;
+  // flex-wrap: wrap;
+  // max-width: 1200px;
 
-  max-width: 1200px;
-  flex-wrap: wrap;
+  min-width: 320px;
+  max-width: 480px;
   height: auto;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.footer__wrapper {
+  text-align: center;
 }
 
 .header__link--dark {
@@ -44,6 +50,5 @@
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--main-bg-color);
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
-
