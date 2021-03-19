@@ -7,8 +7,36 @@
 }
 
 .header__menu {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
+  // position: absolute;
+  // top: 50%;
+  // right: 0;
+  // transform: translateY(-50%);
+}
+
+.header__btn {
+  border: none;
+  background-color: transparent;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.header__container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+
+  // @media screen and(max-width: 767px) {
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }
+
+  // @media screen and(min-width: 768px) {
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }
 }

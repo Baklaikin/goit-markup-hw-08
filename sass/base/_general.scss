@@ -69,21 +69,6 @@ main {
   }
 }
 
-.header__container {
-  display: flex;
-  position: relative;
-
-  // @media screen and(max-width: 767px) {
-  //   align-items: center;
-  //   justify-content: space-between;
-  // }
-
-  // @media screen and(min-width: 768px) {
-  //   align-items: center;
-  //   justify-content: space-between;
-  // }
-}
-
 .hidden {
   position: absolute;
   width: 1px;

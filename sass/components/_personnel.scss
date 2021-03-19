@@ -82,8 +82,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  // width: calc((100%-90px) / 4);
-  // padding-bottom: 30px;
+
   padding-bottom: 24px;
   margin-bottom: 30px;
   text-align: center;
@@ -93,7 +92,21 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
+  // width: calc((100%-90px) / 4);
+  // padding-bottom: 30px;
+
   // &:not(:last-child) {
   //   margin-right: 30px;
   // }
+}
+
+.personnel__thumb {
+  height: auto;
+  min-width: 320px;
+  max-width: 480px;
+  background-size: cover;
+
+  @media screen and(min-width: 480px) {
+    height: 460px;
+  }
 }

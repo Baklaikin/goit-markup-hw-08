@@ -17,9 +17,11 @@
             <div class="container header__container">
                 <a href="/" class="header__link"><span class="header__logo">Web</span>Studio</a>
                 
-                    <svg class="header__menu" width="40" height="40">
-                        <use class="mobile__menu" href="./images/icons.svg#icon-menu-40px"></use>
-                    </svg>
+                   <button class="header__btn" aria-controls="mobile-menu" aria-expanded="false">
+                        <svg class="header__menu" width="40" height="40">
+                            <use class="mobile__menu" href="./images/icons.svg#icon-menu-40px"></use>
+                        </svg>
+                   </button>
                 <nav class="nav">
                     <!-- Логотип -->
                    
@@ -190,7 +192,10 @@
                 
                 <ul class="personnel__list">
                     <li class="personnel__card">
-                        <img src="./images/glassman.jpg" alt="мужчина в очках улыбается" width="270">
+                        <div class="personnel__thumb">
+                            <img source="./images/glassman.jpg 1x, ./images/glassman@2x.jpg 2x" src="./images/glassman.jpg"
+                                alt="мужчина в очках улыбается">
+                        </div>
                         <h3 class="personnel__name">Игорь Демьяненко</h3>
                         <p class="personnel__position">Product Designer</p>
                         <ul class="media">
@@ -215,7 +220,9 @@
                     
                     </li>
                     <li class="personnel__card">
-                        <img src="./images/glassgirl.jpg" alt="девушка в очках улыбается" width="270">
+                        <div class="personnel__thumb">
+                            <img source="./images/glassgirl.jpg 1x, ./images/glassgirl@2x.jpg 2x" src="./images/glassgirl.jpg" alt="девушка в очках улыбается">
+                        </div>
                         <h3 class="personnel__name">Ольга Репина</h3>
                         <p class="personnel__position">Frontend Developer</p>
                         <ul class="media">
@@ -240,7 +247,9 @@
                     </li>
                     
                     <li class="personnel__card">
-                        <img src="./images/noglasses.jpg" alt="парень улыбается" width="270">
+                        <div class="personnel__thumb">
+                            <img source="./images/noglasses.jpg 1x, ./images/noglasses@2x.jpg 2x" src="./images/noglasses.jpg" alt="парень улыбается">
+                        </div>
                         <h3 class="personnel__name">Николай Тарасов</h3>
                         <p class="personnel__position">Marketing</p>
                         <ul class="media">
@@ -265,7 +274,9 @@
                     </li>
                 
                     <li class="personnel__card">
-                        <img src="./images/blacktshirt.jpg" alt="парень в черной футболке улыбается" width="270">
+                        <div class="personnel__thumb">
+                            <img source="./images/blackshirt/jpg 1x, ./images/blackshirt@2x.jpg 2x" src="./images/blacktshirt.jpg" alt="парень в черной футболке улыбается">
+                        </div>
                         <h3 class="personnel__name">Михаил Ермаков</h3>
                         <p class="personnel__position">UI Designer</p>
                         <ul class="media">
