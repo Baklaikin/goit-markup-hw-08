@@ -24,8 +24,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  min-width: 528px;
-  min-height: 581px;
+  // min-width: 528px;
+  width: 450px;
+  max-height: 609px;
   padding: 40px;
   overflow-y: auto;
   background-color: var(--main-bg-color);
@@ -55,7 +56,8 @@
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  // line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
@@ -135,8 +137,8 @@
   font-weight: normal;
   margin: 0 auto;
   padding-left: 23px;
-  font-size: 14px;
-  line-height: 1.7142;
+  font-size: 12px;
+  line-height: 1.1666;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }

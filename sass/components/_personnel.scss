@@ -5,8 +5,8 @@
   height: auto;
   // padding-bottom: 94px;
   // padding-top: 94px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
   background-color: #f5f4fa;
@@ -32,7 +32,6 @@
 }
 
 .personnel__list {
-  // display: inline-flex;
 }
 
 .media__link {
@@ -58,8 +57,6 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  // padding-right: 32px;
-  // padding-left: 32px;
   padding-left: 122px;
   padding-right: 122px;
 
@@ -84,7 +81,6 @@
   margin-right: auto;
 
   padding-bottom: 24px;
-  margin-bottom: 30px;
   text-align: center;
   background-color: var(--main-bg-color);
   overflow: hidden;
@@ -92,12 +88,9 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  // width: calc((100%-90px) / 4);
-  // padding-bottom: 30px;
-
-  // &:not(:last-child) {
-  //   margin-right: 30px;
-  // }
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .personnel__thumb {

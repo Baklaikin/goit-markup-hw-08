@@ -7,16 +7,14 @@
 }
 
 .header__menu {
-  // position: absolute;
-  // top: 50%;
-  // right: 0;
-  // transform: translateY(-50%);
 }
 
 .header__btn {
   border: none;
   background-color: transparent;
   outline: none;
+  border-radius: 50%;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -29,14 +27,5 @@
   position: relative;
   align-items: center;
   justify-content: space-between;
-
-  // @media screen and(max-width: 767px) {
-  //   align-items: center;
-  //   justify-content: space-between;
-  // }
-
-  // @media screen and(min-width: 768px) {
-  //   align-items: center;
-  //   justify-content: space-between;
-  // }
+  padding: 0 15px;
 }

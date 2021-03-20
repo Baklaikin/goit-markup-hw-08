@@ -17,10 +17,15 @@
     <body>
         <header class="header">
             <div class="container header__container">
+                <!-- Логотип -->
+                <a href="./index.html" class="header__link"><span class="header__logo">Web</span>Studio</a>
+                <button class="menu-toggle js-open-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="переключатель мобильного меню">
+                    <svg class="header__menu" width="40" height="40">
+                        <use class="header__icon" href="./images/icons.svg#icon-menu-40px"></use>
+                    </svg>
+                </button>
+                <!-- Ссылки навигации по страницам сайта -->
                 <nav class="nav">
-                    <!-- Логотип -->
-                    <a href="./index.html" class="header__link"><span class="header__logo">Web</span>Studio</a>
-                    <!-- Ссылки навигации по страницам сайта -->
                     <ul class="nav__list">
                         <li class="nav__item"><a href="./index.html" class="nav__link">Студия</a></li>
                         <li class="nav__item "><a href="" class="nav__link nav__link--current">Портфолио</a></li>
@@ -41,6 +46,7 @@
                                 </svg>+38 096 111 11 11</a></li>
                     </ul>
             </div>
+            
         </header>
         <main>
             <!-- Portfolio section -->
@@ -55,15 +61,15 @@
                     <li class="btn__item"><button type="button" class="buttons">Дизайн</button></li> 
                     <li class="btn__item"><button type="button" class="buttons">Маркетинг</button></li>
                 </ul> 
-            </div>
-            <!--Перечень сайтов  -->
-            <div class="container">
+            
+                <!--Перечень сайтов  -->
+            
                 <ul class="grid">
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                             <div class="card__thumb">
-                                <img src="./images/laptop.jpg" alt="ноутбук с карточками людей" width="370">
+                                <img source="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x" src="./images/laptop-450.jpg" alt="ноутбук с карточками людей">
                                 <div class="card__overlay">
                                     <div class="card__text">
                                         <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
@@ -80,10 +86,10 @@
                         </article>
                     </li>
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                                 <div class="card__thumb">
-                                    <img src="./images/basketball-players.jpg" alt="баскетболист прыгает с мячом" width="370">
+                                    <img src="./images/basketball-450.jpg" alt="баскетболист прыгает с мячом">
                                     <div class="card__overlay">
                                         <div class="card__text">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -101,10 +107,10 @@
                         </article>
                     </li>
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                                 <div class="card__thumb">
-                                    <img src="./images/fish-and-logo.jpg" alt="логотип рыбного ресторана" width="370">
+                                    <img src="./images/fish-450.jpg" alt="логотип рыбного ресторана">
                                     <div class="card__overlay">
                                         <div class="card__text">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -122,10 +128,10 @@
                         </article>
                     </li>
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                                 <div class="card__thumb">
-                                    <img src="./images/headset.jpg" alt="черные накладные наушники" width="370">
+                                    <img src="./images/headset-450.jpg" alt="черные накладные наушники">
                                     <div class="card__overlay">
                                         <div class="card__text">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -143,10 +149,10 @@
                         </article>
                     </li>
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                                 <div class="card__thumb">
-                                    <img src="./images/small-boxes.jpg" alt="декоративные коробки с надписями" width="370">
+                                    <img src="./images/boxes-450.jpg" alt="декоративные коробки с надписями">
                                     <div class="card__overlay">
                                         <div class="card__text">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -164,10 +170,10 @@
                         </article>
                     </li>
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                                 <div class="card__thumb">
-                                    <img src="./images/mac-screen.jpg" alt="экран макинтоша с информацией" width="370">
+                                    <img src="./images/mac-screen-450.jpg" alt="экран макинтоша с информацией">
                                     <div class="card__overlay">
                                         <div class="card__text">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -185,10 +191,10 @@
                         </article>
                     </li>
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                                 <div class="card__thumb">
-                                    <img src="./images/opened-book.jpg" alt="открытая книга" width="370">
+                                    <img src="./images/opened-book-450.jpg" alt="открытая книга">
                                     <div class="card__overlay">
                                         <div class="card__text">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -206,10 +212,10 @@
                         </article>
                     </li>
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                                 <div class="card__thumb">
-                                    <img src="./images/label.jpg" alt="ярлык бумажный" width="370">
+                                    <img src="./images/label-450.jpg" alt="ярлык бумажный">
                                     <div class="card__overlay">
                                         <div class="card__text">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -227,10 +233,10 @@
                         </article>
                     </li>
                     <li class="card__grid">
-                        <article>
+                        <article class="grid__article">
                             <a href="https://www.itc.ua">
                                 <div class="card__thumb">
-                                    <img src="./images/laptop-typing.jpg" alt="руки на клавиатуре ноутбука" width="370">
+                                    <img src="./images/laptop-typing-450.jpg" alt="руки на клавиатуре ноутбука">
                                     <div class="card__overlay">
                                         <div class="card__text">
                                             <p>Технокряк это современная площадка распространения коронавируса. Компании используют эту
@@ -253,7 +259,7 @@
         </main>
         <footer class="footer">
             <div class="footer__container">
-                <div>
+                <div class="footer__wrapper">
                     <a href="./index.html" class="header__link header__link--dark"><span class="header__logo">Web</span>Studio</a>
                     <address class="footer__address">
                         <p class="footer__text">г. Киев, пр-т Леси Украинки, 26</p>
@@ -313,5 +319,40 @@
             </div>
             </div>
         </footer>
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="mobile__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-close-40px"></use>
+                </svg>
+            </button>
+            <ul class="mobile__list">
+                <li class="mobile__item"><a href="" class="mobile__link ">Студия</a></li>
+                <li class="mobile__item"><a href="./portfolio.html" class="mobile__link mobile__link--current">Портфолио</a></li>
+                <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
+            </ul>
+            <ul class="mob__links">
+                <li class="mob__item">
+                    <a href="mailto:info@devstudio.com" class="mob__link mob__link--grey">
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="mob__item"><a href="tel:+380961111111" class="mob__link mob__link--blue">
+                        +38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+            <ul class="mobile__social">
+                <li class="social__item"><a class="mobile__media" href="https://www.instagram.com" aria-label="instagram">
+                        Instagram</a>
+                </li>
+                <li class="social__item"><a class="mobile__media" href="https://www.twitter.com" aria-label="twitter">
+                        Twitter</a></li>
+                <li class="social__item"><a class="mobile__media" href="https://www.facebook.com" aria-label="facebook">
+                        Facebook</a></li>
+                <li class="social__item"><a class="mobile__media" href="https://www.linkedin.com" aria-label="linkedin">
+                        LinkedIn</a></li>
+            </ul>
+        </div>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

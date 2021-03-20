@@ -17,25 +17,19 @@
             <div class="container header__container">
                 <a href="/" class="header__link"><span class="header__logo">Web</span>Studio</a>
                 
-                   <button class="header__btn" aria-controls="mobile-menu" aria-expanded="false">
+                   <button class="menu-toggle js-open-menu" aria-controls="mobile-menu" aria-expanded="false" aria-label="переключатель мобильного меню">
                         <svg class="header__menu" width="40" height="40">
-                            <use class="mobile__menu" href="./images/icons.svg#icon-menu-40px"></use>
+                            <use class="header__icon" href="./images/icons.svg#icon-menu-40px"></use>
                         </svg>
                    </button>
                 <nav class="nav">
-                    <!-- Логотип -->
-                   
-                    <!-- Ссылки навигации по страницам сайта -->
-                   
                         <ul class="nav__list">
                             <li class="nav__item"><a href="" class="nav__link nav__link--current">Студия</a></li>
                             <li class="nav__item"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
                             <li class="nav__item"><a href="" class="nav__link">Контакты</a></li>
                         </ul>
                         </nav>
-                        
-                        
-                        <!-- Телефон и почта -->
+                         <!-- Телефон и почта -->
                         <ul class="contact__links">
                             <li class="contact__item">
                                 <a href="mailto:info@devstudio.com" class="nav__link nav__link--grey">
@@ -107,6 +101,41 @@
                                 <button type="submit" class="modal__send">Отправить</button>
                             </form>
                         </div>
+                        
+                    </div>
+                    <div class="mobile-menu js-menu-container" id="mobile-menu">
+                        <button class="menu-toggle js-close-menu">
+                            <svg class="mobile__icon" width="40" height="40">
+                                <use href="./images/icons.svg#icon-close-40px"></use>
+                            </svg>
+                        </button>
+                        <ul class="mobile__list">
+                            <li class="mobile__item"><a href="" class="mobile__link mobile__link--current">Студия</a></li>
+                            <li class="mobile__item"><a href="./portfolio.html" class="mobile__link">Портфолио</a></li>
+                            <li class="mobile__item"><a href="" class="mobile__link">Контакты</a></li>
+                        </ul>
+                        <ul class="mob__links">
+                            <li class="mob__item">
+                                <a href="mailto:info@devstudio.com" class="mob__link mob__link--grey">
+                                        info@devstudio.com
+                                    </a>
+                            </li>
+                            <li class="mob__item"><a href="tel:+380961111111" class="mob__link mob__link--blue">   
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="mobile__social">
+                            <li class="social__item"><a class="mobile__media" href="https://www.instagram.com" aria-label="instagram">
+                                        Instagram</a>
+                            </li>
+                            <li class="social__item"><a class="mobile__media" href="https://www.twitter.com" aria-label="twitter">
+                                        Twitter</a></li>
+                            <li class="social__item"><a class="mobile__media" href="https://www.facebook.com" aria-label="facebook">
+                                        Facebook</a></li>
+                            <li class="social__item"><a class="mobile__media" href="https://www.linkedin.com" aria-label="linkedin">
+                                        LinkedIn</a></li>
+                        </ul>
                     </div>
             </section>
         
@@ -409,5 +438,6 @@
             </div>
         </footer>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
     </body>
 </html>

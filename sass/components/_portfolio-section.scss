@@ -1,5 +1,5 @@
 .portfolio {
-  max-width: 1600px;
+  max-width: 480px;
   font-family: 'Roboto', sans-serif;
   margin-left: auto;
   margin-right: auto;
@@ -9,6 +9,7 @@
 
 .card__grid {
   margin-left: auto;
+  margin-right: auto;
   margin-top: auto;
   margin-bottom: 30px;
   overflow: hidden;
@@ -53,12 +54,12 @@
   color: var(--main-color);
 }
 
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc((100%-60px) / 3);
-  margin-left: -30px;
-}
+// .grid {
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-basis: calc((100%-60px) / 3);
+//   margin-left: -30px;
+// }
 
 .card__grid:nth-child(-n + 3) {
   margin-top: 0;
@@ -101,4 +102,9 @@
 .card__thumb {
   position: relative;
   overflow: hidden;
+  max-width: 450px;
 }
+
+// .grid__article {
+//   max-width: 450px;
+// }
