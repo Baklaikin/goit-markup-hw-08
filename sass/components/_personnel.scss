@@ -31,9 +31,6 @@
   }
 }
 
-.personnel__list {
-}
-
 .media__link {
   display: flex;
   justify-content: center;
@@ -94,10 +91,11 @@
 }
 
 .personnel__thumb {
-  height: auto;
-  min-width: 320px;
-  max-width: 480px;
-  background-size: cover;
+  max-height: 460px;
+  object-fit: cover;
+  // min-width: 320px;
+  // max-width: 480px;
+  // background-size: cover;
 
   @media screen and(min-width: 480px) {
     height: 460px;

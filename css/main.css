@@ -61,7 +61,7 @@ main {
 
 .container {
   min-width: 320px;
-  max-width: 480px;
+  max-width: 1200px;
   height: auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -81,6 +81,15 @@ main {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -294,6 +303,12 @@ main {
   letter-spacing: 0.02em;
 }
 
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-left: 88px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .nav {
     display: none;
@@ -332,6 +347,15 @@ main {
   padding: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .nav__link--grey {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1666;
+    letter-spacing: 0.02em;
+  }
+}
+
 .nav__link--current {
   color: var(--accent-color);
   position: relative;
@@ -367,13 +391,14 @@ main {
 
 @media screen and (min-width: 768px) {
   .contact__links {
-    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .contact__links .nav__link--grey {
-    padding-top: 10px;
+  .contact__item:last-child {
+    margin-top: 10px;
   }
 }
 
@@ -408,6 +433,28 @@ main {
 }
 
 @media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header@2x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    height: auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/header-hd.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/header-hd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero@2x.jpg");
@@ -455,9 +502,9 @@ main {
   left: 50%;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  width: 450px;
-  max-height: 609px;
-  padding: 40px;
+  width: 93.75vw;
+  max-height: 90vh;
+  padding: 48px 40px;
   overflow-y: auto;
   background-color: var(--main-bg-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -606,6 +653,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   position: relative;
   font-weight: normal;
   margin: 0 auto;
@@ -793,24 +842,21 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-left: -30px;
+  margin-top: -30px;
 }
 
 .partners__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: calc((100% / 2)-60);
-      flex-basis: calc((100% / 2)-60);
-  margin-top: 30px;
-  margin-left: 30px;
   color: var(--social-media-color);
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   border: 1px solid var(--social-media-color);
   border-radius: 4px;
@@ -822,6 +868,13 @@ main {
 .partners__link:hover, .partners__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+}
+
+.partners__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  -ms-flex-preferred-size: calc(100% / 2 - 30px);
+      flex-basis: calc(100% / 2 - 30px);
 }
 
 .partner__icon {
@@ -926,10 +979,9 @@ main {
 }
 
 .personnel__thumb {
-  height: auto;
-  min-width: 320px;
-  max-width: 480px;
-  background-size: cover;
+  max-height: 460px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 480px) {
@@ -1250,8 +1302,9 @@ main {
   transition: transform var(--transition), -webkit-transform var(--transition);
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 48px 15px;
   background-color: var(--main-bg-color);
+  overflow-y: scroll;
 }
 
 .mobile-menu.is-open {
@@ -1261,7 +1314,7 @@ main {
 
 .mobile__list {
   text-align: left;
-  margin-bottom: 302px;
+  margin-bottom: 200px;
 }
 
 .mobile__item:not(:last-child) {
@@ -1289,7 +1342,7 @@ main {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   text-align: left;
-  margin-bottom: 64px;
+  margin-bottom: 50px;
 }
 
 .mob__item:last-child {
@@ -1322,6 +1375,8 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mobile__media {
@@ -1352,6 +1407,12 @@ main {
   border: none;
   background-color: transparent;
   outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .mobile-menu .menu-toggle {

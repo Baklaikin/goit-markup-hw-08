@@ -7,8 +7,9 @@
   //   min-width: 320px;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
+  padding: 48px 15px;
   background-color: var(--main-bg-color);
+  overflow-y: scroll;
 }
 
 .mobile-menu.is-open {
@@ -17,7 +18,7 @@
 
 .mobile__list {
   text-align: left;
-  margin-bottom: 302px;
+  margin-bottom: 200px;
 }
 
 .mobile__item:not(:last-child) {
@@ -40,7 +41,7 @@
   display: flex;
   flex-direction: column-reverse;
   text-align: left;
-  margin-bottom: 64px;
+  margin-bottom: 50px;
 }
 
 .mob__item {
@@ -71,6 +72,7 @@
 .mobile__social {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 .mobile__media {
@@ -88,8 +90,8 @@
   padding-right: 10px;
 }
 
-.mobile__icon {
-}
+// .mobile__icon {
+// }
 
 .menu-toggle:focus,
 .menu-toggle:hover {
@@ -109,6 +111,10 @@
   border: none;
   background-color: transparent;
   outline: none;
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
 }
 
 .mobile-menu .menu-toggle {
