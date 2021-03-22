@@ -81,15 +81,21 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
-  // padding-bottom: 50px;
   margin-bottom: 40px;
+  // padding-bottom: 50px;
+
+  @media screen and(min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 
 .btn__item + .btn__item {
   margin-left: 8px;
-
-  &:nth-child(4) {
-    margin-left: 0;
+  @media screen and(max-width: 480px) {
+    &:nth-child(4) {
+      margin-left: 0;
+    }
   }
 
   &:nth-child(-n + 3) {
