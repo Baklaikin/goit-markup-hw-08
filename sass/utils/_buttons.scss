@@ -29,6 +29,7 @@
   line-height: 1.875;
   font-weight: 700;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .close__button {
@@ -88,17 +89,36 @@
     justify-content: center;
     margin-bottom: 30px;
   }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.btn__item + .btn__item {
-  margin-left: 8px;
-  @media screen and(max-width: 480px) {
-    &:nth-child(4) {
-      margin-left: 0;
+.btn__item:not(:last-child) {
+  margin-right: 8px;
+  // @media screen and(max-width: 480px) {
+  //   &:nth-child(4) {
+  //     margin-left: 0;
+  //   }
+  // }
+
+  &:nth-child(-n + 4) {
+    @media screen and(max-width: 767px) {
+      margin-bottom: 15px;
+    }
+    // margin-right: 8px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 0px;
     }
   }
 
-  &:nth-child(-n + 3) {
-    margin-bottom: 15px;
+  .btn__item {
+    @media screen and(min-width: 1200px) {
+      margin-bottom: 0;
+    }
   }
 }
