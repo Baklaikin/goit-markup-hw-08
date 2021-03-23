@@ -83,7 +83,6 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-bottom: 40px;
-  // padding-bottom: 50px;
 
   @media screen and(min-width: 768px) {
     justify-content: center;
@@ -97,17 +96,11 @@
 
 .btn__item:not(:last-child) {
   margin-right: 8px;
-  // @media screen and(max-width: 480px) {
-  //   &:nth-child(4) {
-  //     margin-left: 0;
-  //   }
-  // }
 
   &:nth-child(-n + 4) {
     @media screen and(max-width: 767px) {
       margin-bottom: 15px;
     }
-    // margin-right: 8px;
   }
 
   @media screen and(min-width: 1200px) {

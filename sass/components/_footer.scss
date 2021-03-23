@@ -56,7 +56,6 @@
   font-style: normal;
   letter-spacing: 0.03em;
   color: var(--main-bg-color);
-  // margin-bottom: 20px;
 }
 
 .tablet__wrapper {
@@ -64,8 +63,5 @@
     display: flex;
     align-items: baseline;
     justify-content: space-around;
-  }
-
-  @media screen and(min-width: 1200px) {
   }
 }

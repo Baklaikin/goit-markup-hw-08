@@ -2,10 +2,6 @@
   min-width: 320px;
   max-width: 480px;
   height: auto;
-  // padding-bottom: 94px;
-  // padding-top: 94px;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
   margin-right: auto;
   margin-left: auto;
   background-color: #f5f4fa;
@@ -115,9 +111,6 @@
 .personnel__thumb {
   max-height: 460px;
   object-fit: cover;
-  // min-width: 320px;
-  // max-width: 480px;
-  // background-size: cover;
 
   @media screen and(min-width: 480px) {
     max-height: 460px;

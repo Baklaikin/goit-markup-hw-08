@@ -1,13 +1,10 @@
 .partners {
-  // max-width: 1600px;
   min-width: 320px;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 
   text-align: center;
-  // padding-top: 94px;
-  // padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -56,11 +53,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // flex-basis: calc(100% / 2-30px);
-  // margin-top: 30px;
-  // margin-left: 30px;
   color: var(--social-media-color);
-  // min-width: 130px;
   max-width: 210px;
   height: 90px;
   border: 1px solid var(--social-media-color);
@@ -77,10 +70,6 @@
   @media screen and(min-width: 768px) {
     max-width: 100%;
   }
-
-  // @media screen and(min-width: 1200px) {
-  //   max-width: 170px;
-  // }
 }
 
 .partners__item {
@@ -95,7 +84,6 @@
   @media screen and(min-width: 1200px) {
     margin-top: 0;
     margin-left: 0;
-    // max-width: 170px;
 
     &:not(:last-child) {
       margin-right: 30px;

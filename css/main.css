@@ -667,6 +667,12 @@ main {
   color: var(--black-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__heading {
+    line-height: 1.15;
+  }
+}
+
 .modal__container {
   position: relative;
   display: block;
