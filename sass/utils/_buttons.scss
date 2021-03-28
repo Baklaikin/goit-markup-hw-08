@@ -51,6 +51,20 @@
   &:hover {
     fill: var(--accent-color);
   }
+
+  @media screen and(min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    // width: 30px;
+    // height: 30px;
+    border-radius: 50%;
+    padding: 0;
+    // margin: 0;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    background-position: center;
+  }
 }
 
 .buttons {
